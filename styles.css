@@ -7,3 +7,24 @@ p, h1,h2,h3,h4{
   padding-right: 80px;
 
 }
+
+#navbar{
+  padding-left: 100px;
+  padding-right:80px
+}
+#logo{
+  width: 100px
+}
+
+#home-screen{
+  min-height: 100vh;
+  background-image: linear-gradient(45deg, #02557d7a, #02557d7a), url("/assets/backgrounds/IMAGEN\ HERO.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-link{
+  font-size: 1.25rem;
+  padding-left: 1.5rem !important;
+}
