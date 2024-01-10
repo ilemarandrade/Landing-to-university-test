@@ -220,6 +220,9 @@ h6 {
   width: 100%;
   color: white;
   background-image: linear-gradient(45deg, #02557d7a, #02557d7a), url("/assets/backgrounds/BackgroundTestimonial.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 html {
@@ -246,9 +249,45 @@ html {
   border: 0.10rem solid white
 }
 
-#container-careers {
-  /* min-height: 100%; */
-  /* max-width: 60rem */
+.container-name-review {
+  position: absolute;
+  bottom: -1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.container-name-review>p {
+  color: #ce532d;
+  text-align: center;
+  border-radius: 0.25rem;
+  background-color: white;
+  width: 70%;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.play-button {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-size: 3rem;
+  border-radius: 100%;
+  background-color: #ce532d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -301,7 +340,7 @@ html {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #container-testimonials {
-    width: 50%;
+    width: 60%;
   }
 
   .p-section {

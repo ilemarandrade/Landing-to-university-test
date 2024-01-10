@@ -74,49 +74,29 @@ function desingOurTeam(container, elements) {
     })
 
 
-    printer(container, print, true)
+    printer(container, print, "team")
 }
 
 
-function desingOurTeamCarousel(container, elements) {
+function desingReviewsCarousel(container, elements) {
     var print = "";
 
-    elements.forEach(function ({ name, role, img }, index) {
+    elements.forEach(function ({ name, img }) {
         print += `
-    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 ${!index ? "active" : ""}">    
-        <div class="py-2 py-sm-4 d-flex justify-content-center justify-content-lg-start">
-            <div class="card">
-                <div class="wall position-relative">
-                    <div class="position-absolute bg-filter-main w-100 h-100"></div>
-                    <img class="fill-with-img" src="/assets/backgrounds/IMAGEBACKGROUNDWALLTEAM.jpg" />
-                    <div class="container-avatar d-flex justify-content-center">
-                    <img class="avatar fill-with-img" src="${img}" />
-                    </div>
+        <div class="slide pb-3 h-100">
+            <div class="w-100 position-relative h-100 w-100 d-flex align-items-center">
+                <img class="review-video" src="${img}" />
+                <div class="container-name-review">
+                    <p>${name}</p>
                 </div>
-                <div class="d-flex flex-column flex-grow-1 pb-4 ">
-                    <div class="flex-1"></div>
-                    <div class="flex-1 justify-content-center d-flex flex-column">
-                    <p class="text-center h3 text-primary font-weight-bold mb-0">${name}</p>
-                    <p class="text-center h3 text-secondary mb-0">${role}</p>
-                    </div>
-                    <div class="flex-1 d-flex justify-content-center align-items-end">
-                    <button class="btn btn-outline-secondary">Read More</button>
-                    </div>
-                </div>
+                <div class="play-button" data-toggle="modal" data-target="#modal-video" data-name="${name}"><i class="bi bi-play-fill"></i></div>
             </div>
-        </div>    
-    </div>    
+        </div>
         `;
 
     })
 
-    // print+= `
-    // <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">    
-    // </div>
-
-    // `
-    printer(container, print)
-
+    printer(container, print, "reviews");
 }
 
 
@@ -124,10 +104,10 @@ function desingCareers(container, elements) {
     var print = "";
 
     elements.forEach((carrers) => {
-        let careersElements=""
+        let careersElements = ""
         console.log(carrers)
         carrers.forEach(({ name, img, classCustom }, index) => {
-        careersElements+=`
+            careersElements += `
                 <div class="${classCustom} py-2">
                         <div class="career p-3 d-flex align-items-end " style="background-image: linear-gradient(45deg, #02557d7a, #02557d7a), url('${img}'); background-size: cover; background-repeat: no-repeat">
                             <div class="w-100">
@@ -138,7 +118,7 @@ function desingCareers(container, elements) {
                 </div>
                 `});
 
-        print+=`
+        print += `
         <div class="col-12 col-md-6">
             <div class="row h-100">
                 ${careersElements}

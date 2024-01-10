@@ -15,6 +15,21 @@ $(document).ready(function(){
     }
   });
 
-  
+  $('.play-button').click(function() {
+    console.log("aqui");
+    var video = $(this).siblings('.review-video').get(0);
+    video.play();
+    $(this).hide();
+  });
+
+  $('.review-video').click( function() {
+    this.currentTime = 0;
+    this.load(0);
+    $(this).siblings('.play-button').show();
+  });
+
+   $('.slide').click( function() {
+    console.log("entro aqui")
+  });
 
 });
