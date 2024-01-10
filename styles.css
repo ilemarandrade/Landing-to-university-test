@@ -2,6 +2,16 @@
   flex: 1;
 }
 
+a:hover,
+a:visited,
+a:active {
+  color: none !important;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
 p,
 h1,
 h2,
@@ -18,6 +28,14 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+}
+
+.text-primary-all>* {
+  color: var(--primary) !important
+}
+
+.text-white-all>* {
+  color: white !important
 }
 
 .p-section {
@@ -118,11 +136,17 @@ h6 {
   max-width: 31.25rem;
 }
 
-#video-main {
+#container-video-main {
   position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#video-main {
   height: 120%;
   left: -40%;
-  z-index: 0;
 }
 
 .card {

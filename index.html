@@ -22,14 +22,68 @@
 </head>
 
 <body>
+  <div class="fixed-top">
+    <!-- Header -->
+    <header id="header" class="text-white-all p-section bg-primary container-fluid d-flex justify-content-between py-1">
+      <div class="d-flex">
+        <!-- Phone -->
+        <a href="tel:123456789" class="d-flex mr-4 align-items-center text-white">
+          <div class="mr-3">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <p class="d-md-block d-none">123 456 789</p>
+        </a>
+        <!-- Email -->
+        <a href="mailto:info@email.com" class="d-flex text-white">
+          <div class="mr-3">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <p class="d-md-block d-none">info@email.com</p>
+        </a>
+      </div>
+      <div class="d-flex justify-content-end">
+        <a href="https://www.youtube.com" target="_blank" class="text-white"><i class="bi bi-youtube ml-4"></i></a>
+        <a href="https://www.instagram.com" target="_blank" class="text-white"><i class="bi bi-instagram ml-4"></i></a>
+        <a href="https://www.facebook.com" target="_blank" class="text-white"><i class="bi bi-facebook ml-4"></i></a>
+      </div>
+    </header>
+
+    <!-- Header the end -->
+    <!-- NavBar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark p-section">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/icons/LOGO.png" id="logo" />
+      </a>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- NavBar the end -->
+  </div>
   <!-- Content Main in the firts screen -->
-  <div class="position-relative overflow-hidden">
-    <video id="video-main" autoplay muted loop>
-      <source src="./assets/videos/video.mp4" type="video/mp4">
-      Tu navegador no soporta el elemento de video.
-    </video>
+  <div class="position-relative z-3">
+    <div id="container-video-main">
+      <video id="video-main" autoplay muted loop>
+        <source src="./assets/videos/video.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </div>
     <div id="home-screen" class="bg-filter-main d-flex flex-column position-relative">
-      <div class="sticky-top">
+      <div class="invisible">
         <!-- Header -->
         <header class="text-white p-section bg-primary container-fluid d-flex justify-content-between py-1">
           <div class="d-flex">
@@ -354,6 +408,7 @@
   <script src="./js/carousel.js"></script>
   <script src="./js/helpers.js"></script>
   <script src="./js/design.js"></script>
+  <script src="./js/events.js"></script>
   <script src="./js/init.js"></script>
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
