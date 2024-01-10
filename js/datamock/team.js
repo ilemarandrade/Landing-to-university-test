@@ -19,4 +19,9 @@ const team = [
         img: "./assets/team/IMAGE TEAM 3.jpg",
         role:"Math Teacher"
     },   
+    {
+        name: "Margot Soto",
+        img: "./assets/team/IMAGE TEAM 3.jpg",
+        role:"Math Teacher"
+    },   
 ]
