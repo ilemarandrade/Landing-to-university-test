@@ -45,7 +45,7 @@ h6 {
 }
 
 #logo {
-  width: 4.375rem;
+  width: 6.375rem;
 }
 
 .navbar-brand-footer {
@@ -89,7 +89,7 @@ h6 {
 }
 
 #header {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 
 #header-form {
@@ -316,6 +316,10 @@ html {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  #logo {
+    width: 4.375rem;
+  }
+
   .career {
     border-radius: 0.75rem;
     width: 100%;
