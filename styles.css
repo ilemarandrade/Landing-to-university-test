@@ -350,6 +350,27 @@ html {
 
 }
 
+#new-letter {
+  padding: 0.1rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: white;
+  max-width: 18rem;
+}
+
+#new-letter input {
+  padding-left: 1rem;
+  width: fit-content;
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #container-testimonials {
