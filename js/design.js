@@ -105,7 +105,7 @@ function desingCareers(container, elements) {
 
     elements.forEach((carrers) => {
         let careersElements = ""
-        console.log(carrers)
+  
         carrers.forEach(({ name, img, classCustom }, index) => {
             careersElements += `
                 <div class="${classCustom} py-2">
