@@ -18,17 +18,11 @@ $(document).ready(function(){
     }
   });
 
-  $('.play-button').click(function() {
-    var video = $(this).siblings('.review-video').get(0);
+  $('#modal-video').on('show.bs.modal', function (e) {
+    var video = $('.review-video').get(0);
+    video.currentTime = 0;
     video.play();
-    $(this).hide();
-  });
-
-  $('.review-video').click( function() {
-    this.currentTime = 0;
-    this.load(0);
-    $(this).siblings('.play-button').show();
-  });
+  })
 
   $(".navbar-toggler").click(function(){
     const isCollapsedMenu = $(".navbar-toggler").attr('aria-expanded') === "false";

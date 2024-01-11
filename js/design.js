@@ -85,7 +85,7 @@ function desingReviewsCarousel(container, elements) {
         print += `
         <div class="slide pb-3 h-100">
             <div class="w-100 position-relative h-100 w-100 d-flex align-items-center">
-                <img class="review-video" src="${img}" />
+                <img src="${img}" />
                 <div class="container-name-review">
                     <p>${name}</p>
                 </div>
