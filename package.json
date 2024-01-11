@@ -1,17 +1,12 @@
 {
   "name": "theme-kit",
   "version": "1.0.1",
-  "description": "A starter project to build your own Bootstrap themes",
-  "repository": "https://github.com/HackerThemes/theme-kit",
+  "description": "Test Frontend",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "bootstrap",
-    "themes"
-  ],
-  "author": "Alexander Rechsteiner",
+  "author": "Ilemar Andrade",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.2.1",
