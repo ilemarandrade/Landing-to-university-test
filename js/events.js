@@ -5,11 +5,11 @@ $(document).ready(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     if(scroll > 50){
-      $("#header").removeClass("bg-primary").addClass("bg-light")
+      $("#header").removeClass("bg-primary").addClass("bg-white")
       $('#header').find('.text-white').removeClass('text-white').addClass('text-primary');
       $("#navbar").addClass("bg-primary");
     } else{
-      $("#header").addClass("bg-primary").removeClass("bg-light");
+      $("#header").addClass("bg-primary").removeClass("bg-white");
       $('#header').find('.text-primary').removeClass('text-primary').addClass('text-white');;
       $("#navbar").removeClass("bg-primary");
     }

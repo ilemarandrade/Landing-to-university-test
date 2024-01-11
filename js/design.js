@@ -3,8 +3,8 @@ function desingCourseCard(container, elements) {
 
     elements.forEach(function ({ name, img }, index) {
         print += `
-                <div class="col-12 col-sm py-2 py-sm-4 d-flex justify-content-${index % 2 ? "end" : "start"} justify-content-sm-start">
-                    <div class="card d-flex flex-column bg-light">
+                <div class="container-course col-12 col-sm py-2 py-sm-4 d-flex justify-content-${index % 2 ? "end" : "start"} justify-content-sm-start">
+                    <div class="card-course d-flex flex-column bg-light">
                         <div class="card-container-img-course">
                             <img class="w-100" src="${img}" />
                         </div>
