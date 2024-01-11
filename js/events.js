@@ -1,6 +1,12 @@
 $(document).ready(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
+    const isCollapsedMenu = $(".navbar-toggler").attr('aria-expanded') === "false";
+
+    if(!isCollapsedMenu){
+      return
+    }
+
     if(scroll > 50){
       $("#header").removeClass("bg-primary").addClass("bg-white")
       $('#header').find('.text-white').removeClass('text-white').addClass('text-primary');
